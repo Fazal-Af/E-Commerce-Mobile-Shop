@@ -1,0 +1,52 @@
+.contactContainer {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: grid;
+  text-align: center;
+  /* place-items: center; */
+  background-color: rgb(15, 14, 14);
+  position: fixed;
+}
+
+.mailBtn {
+  text-decoration: none;
+  transform: translateX(-100vw);
+  animation: mailBtnAnimation 2s forwards;
+  
+}
+.contact-heading{
+  position: absolute;
+  top: 1vh;
+  color: blue;
+  font: 400 3vmax "Roboto";
+}
+
+.mailBtn > button {
+  text-decoration: none;
+  font: 200 2vmax "Roboto";
+  cursor: url("https://img.icons8.com/color/48/000000/edit--v2.png"), pointer;
+  padding: 2vmax;
+  color: tomato;
+}
+.contactBox {
+  width: 70vw;
+  height: 60vh;
+  margin:15vh auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: relative;
+  box-shadow: .5rem .7rem .5rem rgb(78, 78, 77);
+}
+.contact {
+  position: absolute;
+  transform: translateY(150%);
+}
+
+@keyframes mailBtnAnimation {
+  to {
+    transform: translateX(0);
+  }
+}
